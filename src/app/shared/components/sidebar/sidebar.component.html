@@ -1,0 +1,9 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3>Gifs App</h3>
+  <hr class="text-white">
+  <div *ngFor="let item of list" class="list-group list-reset">
+    <button (click)="getGifs(item)" class="list-group-item list-group-item-action">
+      {{ item|titlecase  }}
+    </button>
+  </div>
+</div>
